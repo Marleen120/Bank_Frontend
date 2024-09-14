@@ -1,0 +1,132 @@
+body,html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('interbank-currency-exchange_387612-259.jpg');
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 100vh; /* Ensure the body covers at least the full viewport height */
+}
+p{
+    color: white;
+}
+nav {
+    justify-content: center;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+ /*elements that are located within a <nav>*/
+  nav a {
+    text-align: center;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 8%;
+  }
+  
+ /* state of an element when a user's cursor is placed over it*/
+  nav a:hover {
+    background-color: #000;
+  }
+  
+  nav a.active {
+    background-color: #134d83;
+  }
+
+  main{
+    justify-content: center;
+    width: 50%;
+    margin: auto;/* Center the element horizontally */
+}
+
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.817);
+    margin-bottom: 5px;
+}
+h2{
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+}
+.input-container label{
+    color: white;
+}
+.email-container{
+    color: white;
+}
+.password-container{
+    color:white;
+}
+.login-btn{
+    width: 10%;
+    padding: 10px;
+    border: none;
+    color: black;
+
+}
+
+.login-btn:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.loginForm label{
+    color: white;
+}
+
+
+.signup-btn {
+    color:white;
+}
+
+.email-container  input[type="email"]{
+padding: 10px;
+}
+
+input[type="email"] {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.submit-container input[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    color:black;
+    cursor: pointer;
+    border: none;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: lightgreen;
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    margin-right: 50px;
+}
+span{
+    color:white;
+}
+

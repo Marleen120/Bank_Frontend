@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        body {
+            background-color: #333;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a.active {
+            background-color: #45a049;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+        }
+
+        main {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .background-image {
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: white;
+            padding-top: 70px;
+        }
+
+        h2 {
+            color: white;
+            padding-top: 10px;
+        }
+
+        p {
+            color: white;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .floating-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 200px;
+            animation: floatImage 15s infinite linear;
+        }
+
+        .floating-images-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            animation: floatImageRight 15s infinite linear;
+        }
+
+        .bankingimage {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the new images */
+        .new-images-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            max-width: 800px; /* Adjust the max-width as needed */
+            width: 100%;
+            margin: auto; /* Center the container */
+            margin-top: 100px;
+        }
+
+        .new-image {
+            width: 300px;
+            height: auto;
+        }
+
+        hr {
+            border: 1px solid #666;
+            width: 80%;
+        }
+
+        .bottom-options {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            margin-top: 20px;
+            padding: 10px 0;
+            color: lightyellow;
+        }
+
+        .bottom-options li {
+            margin: 0;
+        }
+
+        .bottom-options a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        @keyframes floatImage {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, 50px);
+            }
+            50% {
+                transform: translate(100px, 100px);
+            }
+            75% {
+                transform: translate(-50px, -50px);
+            }
+        }
+
+        @keyframes floatImageRight {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(-50px, 50px);
+            }
+            50% {
+                transform: translate(-100px, 100px);
+            }
+            75% {
+                transform: translate(50px, -50px);
+            }
+        }
+
+        .text-content-left,
+        .text-content-right {
+            position: absolute;
+            top: 220px;
+            text-align: center;
+        }
+
+        .text-content-left p,
+        .text-content-right p {
+            color: lightpink;
+            font-size: 18px;
+            margin-top: 70px;
+            display: block;
+        }
+
+        .text-content-left {
+            left: 0px;
+        }
+
+        .text-content-right {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-image">
+                    <img src="logoo.jpg" width="50" height="50" alt="Logo" />
+                </div>
+                <a href="Home.html" class="active">Home</a>
+                <a href="login.php">User</a>
+                <a href="Accounts.php">Accounts</a>
+                <a href="loan.php">Loan</a>
+                <a href="Cards.php">Cards</a>
+                <a href="transactions.php">Transactions</a>
+                <a href="contact_us.php">Contact us</a>
+                <a href="about_us.php">About Us</a>
+            </nav>
+        </header>
+
+        <div class="background-image">
+            <main>
+                <h1>Welcome to Online Banking</h1>
+                <p>
+                    Experience the convenience of managing your finances online. Explore our services and make secure transactions with ease.
+                </p>
+                <h2>Banking on the Go!</h2>
+                <p>Elevate your banking experience with our digital banking services. Join today.</p>
+            </main>
+
+            <!-- Floating images and text (existing) -->
+            <a href="Cards.php"><img class="floating-images" src="ff.jpg" alt="Floating Image 1"></a>
+<a href="transactions.php"><img class="floating-images-right" src="don.jpg" alt="Floating Image Right"></a>
+            <div class="text-content-left">
+                <p>Make use of our debit/credit cards using online banking services.</p>
+            </div>
+            <div class="text-content-right">
+                <p>Make transactions via our application.</p>
+            </div>
+
+            <!-- New images on the left and right side -->
+            <div class="new-images-container">
+                <img class="new-image" src="img3.jpg" alt="New Image">
+                <img class="new-image" src="picc.jpg" alt="New Image2">
+             
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <footer>
+
+        <ul class="bottom-options">
+        
+            <li><i class="fas fa-cogs"></i><a href="Services.html">Services</a></li>
+            <li><i class="fas fa-comment-alt"></i><a href="feedback.php">Feedback</a></li>
+           
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
